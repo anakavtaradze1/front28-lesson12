@@ -1,6 +1,8 @@
 body {
   background-color: #f2f2f2;
+  padding-bottom: 100px;
 }
+
 .header-icon {
   width: 48px;
   height: 48px;
