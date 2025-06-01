@@ -47,7 +47,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg container pt-3 pb-3">
+      <nav class="navbar navbar-expand-md container pt-3 pb-3">
         <div class="container-fluid">
           <a
             class="navbar-brand text-decoration-none text-reset"
@@ -89,583 +89,602 @@
               </li>
             </ul>
           </div>
-          <button type="button" class="btn btn-success d-none d-lg-block">
+          <button type="button" class="btn btn-success d-none d-md-block">
             Sell Something
           </button>
-          <div class="rounded-circle bg-white shadow-sm d-lg-none">
+          <div class="rounded-circle bg-white shadow-sm d-md-none">
             <img class="p-3" src="src/images/search-normal.png" alt="search" />
           </div>
         </div>
       </nav>
     </header>
 
-    <section>
-      <div class="position-relative container">
-        <img
-          class="main-image rounded-5 w-100 pb-3"
-          src="src/images/531b58312d00d82a61321f4b4a29438517abbb42.jpg"
-          alt="city"
-        />
-        <div class="position-absolute top-0 p-3 pt-4 w-100 text-center">
-          <h1 class="fs-1 fw-semibold">Find the house you want easily</h1>
-          <h2 class="fs-6 opacity-75 fw-normal">
-            Buy, sell, rent or lease on just one platform
-          </h2>
-          <div class="d-flex justify-content-center">
-            <form
-              action="#"
-              method="get"
-              class="w-25 d-none d-lg-block"
-              role="search"
-            >
-              <div class="position-relative">
-                <input
-                  type="text"
-                  class="form-control rounded shadow-sm pe-5"
-                  placeholder="Search..."
-                  aria-label="Search"
-                />
-                <button
-                  type="submit"
-                  class="btn bg-transparent border-0 p-1 position-absolute top-50 end-0 translate-middle-y me-3 z-2"
-                  aria-label="Submit search"
-                >
-                  <img src="src/images/search-normal.png" alt="search" />
-                </button>
-              </div>
-            </form>
+    <section class="my-4 container">
+      <div class="row">
+        <div class="position-relative col-12 col-lg-8 order-lg-2 pb-3 pb-lg-0">
+          <img
+            class="main-image rounded-5 w-100 h-100"
+            src="src/images/531b58312d00d82a61321f4b4a29438517abbb42.jpg"
+            alt="city"
+          />
+          <div
+            class="position-absolute top-0 p-3 pt-4 start-0 end-0 text-center"
+          >
+            <h1 class="fs-1 fw-semibold">Find the house you want easily</h1>
+            <h2 class="fs-6 opacity-75 fw-normal">
+              Buy, sell, rent or lease on just one platform
+            </h2>
+            <div class="d-flex justify-content-center">
+              <form
+                action="#"
+                method="get"
+                class="w-50 d-none d-md-block"
+                role="search"
+              >
+                <div class="position-relative">
+                  <input
+                    type="text"
+                    class="form-control rounded shadow-sm pe-5"
+                    placeholder="Search..."
+                    aria-label="Search"
+                  />
+                  <button
+                    type="submit"
+                    class="btn bg-transparent border-0 p-1 position-absolute top-50 end-0 translate-middle-y me-3 z-2"
+                    aria-label="Submit search"
+                  >
+                    <img src="src/images/search-normal.png" alt="search" />
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="shadow p-3 mb-4 bg-white rounded-4">
-        <h2 class="fs-5 fw-medium lh-1 pb-2">Location</h2>
-        <select class="form-select mb-4" aria-label="Default select example">
-          <option selected>All Kenya</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-        </select>
+        <div class="shadow p-3 bg-white rounded-4 col-12 col-lg-4 order-lg-1">
+          <h2 class="fs-5 fw-medium lh-1 pb-2">Location</h2>
+          <select class="form-select mb-4" aria-label="Default select example">
+            <option selected>All Kenya</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
 
-        <h2 class="fs-5 fw-medium lh-1 pb-1 pt-2 pb-2">Property</h2>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="checkDefault" />
-          <label class="form-check-label pb-1" for="checkDefault">
-            Houses & Apartments for Rent <span class="opacity-75">| 9548</span>
-          </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            id="checkDefault"
-            checked
-          />
-          <label class="form-check-label pb-1" for="checkDefault">
-            Houses & Apartments for Sale <span class="opacity-75">| 9548</span>
-          </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            id="checkDefault"
-            checked
-          />
-          <label class="form-check-label pb-1" for="checkDefault">
-            Land & Plots for Rent <span class="opacity-75">| 9548</span>
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="checkDefault" />
-          <label class="form-check-label pb-1" for="checkDefault">
-            Land & Plots for Sale <span class="opacity-75">| 9548</span>
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="checkDefault" />
-          <label class="form-check-label pb-1" for="checkDefault">
-            Commercial Property for Rent <span class="opacity-75">| 9548</span>
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="checkDefault" />
-          <label class="form-check-label pb-1" for="checkDefault">
-            Commercial Property for Sale <span class="opacity-75">| 9548</span>
-          </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            id="checkDefault"
-            checked
-          />
-          <label class="form-check-label pb-1" for="checkDefault">
-            Event Centres, Venues & Worksta
-            <span class="opacity-75">| 9548</span>
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="checkDefault" />
-          <label class="form-check-label pb-1" for="checkDefault">
-            Short Let Property <span class="opacity-75">| 9548</span>
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="checkDefault" />
-          <label class="form-check-label pb-1" for="checkDefault">
-            Land & Plots for Sale <span class="opacity-75">| 9548</span>
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="checkDefault" />
-          <label class="form-check-label pb-1" for="checkDefault">
-            Commercial Property for Rent <span class="opacity-75">| 9548</span>
-          </label>
-        </div>
+          <h2 class="fs-5 fw-medium lh-1 pb-1 pt-2 pb-2">Property</h2>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="checkDefault" />
+            <label class="form-check-label pb-1" for="checkDefault">
+              Houses & Apartments for Rent
+              <span class="opacity-75">| 9548</span>
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="checkDefault"
+              checked
+            />
+            <label class="form-check-label pb-1" for="checkDefault">
+              Houses & Apartments for Sale
+              <span class="opacity-75">| 9548</span>
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="checkDefault"
+              checked
+            />
+            <label class="form-check-label pb-1" for="checkDefault">
+              Land & Plots for Rent <span class="opacity-75">| 9548</span>
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="checkDefault" />
+            <label class="form-check-label pb-1" for="checkDefault">
+              Land & Plots for Sale <span class="opacity-75">| 9548</span>
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="checkDefault" />
+            <label class="form-check-label pb-1" for="checkDefault">
+              Commercial Property for Rent
+              <span class="opacity-75">| 9548</span>
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="checkDefault" />
+            <label class="form-check-label pb-1" for="checkDefault">
+              Commercial Property for Sale
+              <span class="opacity-75">| 9548</span>
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="checkDefault"
+              checked
+            />
+            <label class="form-check-label pb-1" for="checkDefault">
+              Event Centres, Venues & Worksta
+              <span class="opacity-75">| 9548</span>
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="checkDefault" />
+            <label class="form-check-label pb-1" for="checkDefault">
+              Short Let Property <span class="opacity-75">| 9548</span>
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="checkDefault" />
+            <label class="form-check-label pb-1" for="checkDefault">
+              Land & Plots for Sale <span class="opacity-75">| 9548</span>
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="checkDefault" />
+            <label class="form-check-label pb-1" for="checkDefault">
+              Commercial Property for Rent
+              <span class="opacity-75">| 9548</span>
+            </label>
+          </div>
 
-        <h2 class="fs-5 fw-medium lh-1 pt-4 pb-2">Price range</h2>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="checkDefault" />
-          <label class="form-check-label pb-1" for="checkDefault">
-            Under 13 K <span class="opacity-75">• 2183 ads</span>
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="checkDefault" />
-          <label class="form-check-label pb-1" for="checkDefault">
-            Under 13 K <span class="opacity-75">• 2183 ads</span>
-          </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            id="checkDefault"
-            checked
-          />
-          <label class="form-check-label pb-1" for="checkDefault">
-            160 K - 6 M <span class="opacity-75">• 2183 ads</span>
-          </label>
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            id="checkDefault"
-            checked
-          />
-          <label class="form-check-label pb-1" for="checkDefault">
-            6 - 55 M <span class="opacity-75">• 2183 ads</span>
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="checkDefault" />
-          <label class="form-check-label pb-1" for="checkDefault">
-            6 - 55 M <span class="opacity-75">• 2183 ads</span>
-          </label>
+          <h2 class="fs-5 fw-medium lh-1 pt-4 pb-2">Price range</h2>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="checkDefault" />
+            <label class="form-check-label pb-1" for="checkDefault">
+              Under 13 K <span class="opacity-75">• 2183 ads</span>
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="checkDefault" />
+            <label class="form-check-label pb-1" for="checkDefault">
+              Under 13 K <span class="opacity-75">• 2183 ads</span>
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="checkDefault"
+              checked
+            />
+            <label class="form-check-label pb-1" for="checkDefault">
+              160 K - 6 M <span class="opacity-75">• 2183 ads</span>
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="checkDefault"
+              checked
+            />
+            <label class="form-check-label pb-1" for="checkDefault">
+              6 - 55 M <span class="opacity-75">• 2183 ads</span>
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="checkDefault" />
+            <label class="form-check-label pb-1" for="checkDefault">
+              6 - 55 M <span class="opacity-75">• 2183 ads</span>
+            </label>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="container">
       <h2 class="fs-5 fw-medium lh-1 pb-1 pt-2 pb-2">Trending ads</h2>
-
-      <a class="text-decoration-none text-reset" href="products.html">
-        <div class="d-flex flex-column shadow mb-4 mt-3 bg-white rounded-5">
-          <div class="p-3">
-            <div class="position-relative">
-              <img
-                class="w-100 rounded-4 mb-3"
-                src="src/images/9aba2f81804b0557885021d144d5021c4f5ef0fc.jpg"
-                alt="house"
-              />
-              <div
-                class="d-flex bg-white rounded-circle p-2 position-absolute bottom-0 end-0 me-2 shadow"
-              >
-                <img
-                  class="w-100 h-100"
-                  src="src/images/Frame.png"
-                  alt="bookmark"
-                />
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <a class="text-decoration-none text-reset" href="products.html">
+            <div class="d-flex flex-column shadow mb-4 mt-3 bg-white rounded-5">
+              <div class="p-3">
+                <div class="position-relative">
+                  <img
+                    class="w-100 rounded-4 mb-3 ad-card-image"
+                    src="src/images/9aba2f81804b0557885021d144d5021c4f5ef0fc.jpg"
+                    alt="house"
+                  />
+                  <div
+                    class="d-flex bg-white rounded-circle p-2 position-absolute bottom-0 end-0 me-2 shadow"
+                  >
+                    <img
+                      class="w-100 h-100"
+                      src="src/images/Frame.png"
+                      alt="bookmark"
+                    />
+                  </div>
+                  <span
+                    class="position-absolute top-0 start-0 mt-3 ms-3 badge rounded-pill text-bg-success fw-normal p-2"
+                    >VIP TOP+</span
+                  >
+                </div>
+                <h3 class="fs-5 pt-3 fw-medium">
+                  200 Acres Parcel for Sale in Namanga
+                </h3>
+                <h4 class="fs-6 opacity-50 fw-normal">Kajiado, Namanga</h4>
+                <div
+                  class="d-flex justify-content-end align-items-baseline pt-1 gap-1"
+                >
+                  <span class="text-success fs-2 fw-semibold">1450$</span>
+                  <span>/</span>
+                  <span>Month</span>
+                </div>
               </div>
-              <span
-                class="position-absolute top-0 start-0 mt-3 ms-3 badge rounded-pill text-bg-success fw-normal p-2"
-                >VIP TOP+</span
-              >
-            </div>
-            <h3 class="fs-5 pt-3 fw-medium">
-              200 Acres Parcel for Sale in Namanga
-            </h3>
-            <h4 class="fs-6 opacity-50 fw-normal">Kajiado, Namanga</h4>
-            <div
-              class="d-flex justify-content-end align-items-baseline pt-1 gap-1"
-            >
-              <span class="text-success fs-2 fw-semibold">1450$</span>
-              <span>/</span>
-              <span>Month</span>
-            </div>
-          </div>
-          <hr class="my-1" />
-          <div class="p-4">
-            <div class="d-flex justify-content-between fs-6">
-              <span> 5 Bedroom </span>
-              <span> 5 Bedroom </span>
-              <span> 450 Sq.m. </span>
-            </div>
-          </div>
-        </div>
-      </a>
-
-      <a class="text-decoration-none text-reset" href="products.html">
-        <div class="d-flex flex-column shadow mb-4 mt-3 bg-white rounded-5">
-          <div class="p-3">
-            <div class="position-relative">
-              <img
-                class="w-100 rounded-4 mb-3"
-                src="src/images/95435e4f5b210b19b933f95c6311a767b4618423.jpg"
-                alt="house"
-              />
-              <div
-                class="d-flex bg-white rounded-circle p-2 position-absolute bottom-0 end-0 me-2 shadow"
-              >
-                <img
-                  class="w-100 h-100"
-                  src="src/images/Frame.png"
-                  alt="bookmark"
-                />
+              <hr class="my-1" />
+              <div class="p-4">
+                <div class="d-flex justify-content-between fs-6">
+                  <span> 5 Bedroom </span>
+                  <span> 5 Bedroom </span>
+                  <span> 450 Sq.m. </span>
+                </div>
               </div>
-              <span
-                class="position-absolute top-0 start-0 mt-3 ms-3 badge rounded-pill text-bg-success fw-normal p-2"
-                >VIP TOP+</span
-              >
             </div>
-            <h3 class="fs-5 pt-3 fw-medium">
-              200 Acres Parcel for Sale in Namanga
-            </h3>
-            <h4 class="fs-6 opacity-50 fw-normal">Kajiado, Namanga</h4>
-            <div
-              class="d-flex justify-content-end align-items-baseline pt-1 gap-1"
-            >
-              <span class="text-success fs-3 fw-semibold">1450$</span>
-              <span>/</span>
-              <span>Month</span>
-            </div>
-          </div>
-          <hr class="my-1" />
-          <div class="p-4">
-            <div class="d-flex justify-content-between fs-6">
-              <span> 5 Bedroom </span>
-              <span> 5 Bedroom </span>
-              <span> 450 Sq.m. </span>
-            </div>
-          </div>
+          </a>
         </div>
-      </a>
-
-      <a class="text-decoration-none text-reset" href="products.html">
-        <div class="d-flex flex-column shadow mb-4 mt-3 bg-white rounded-5">
-          <div class="p-3">
-            <div class="position-relative">
-              <img
-                class="w-100 rounded-4 mb-3"
-                src="src/images/48293d6f8dcc0a7dc83db8f26323c818c821d4ce.jpg"
-                alt="house"
-              />
-              <div
-                class="d-flex bg-white rounded-circle p-2 position-absolute bottom-0 end-0 me-2 shadow"
-              >
-                <img
-                  class="w-100 h-100"
-                  src="src/images/Frame.png"
-                  alt="bookmark"
-                />
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <a class="text-decoration-none text-reset" href="products.html">
+            <div class="d-flex flex-column shadow mb-4 mt-3 bg-white rounded-5">
+              <div class="p-3">
+                <div class="position-relative">
+                  <img
+                    class="w-100 rounded-4 mb-3 ad-card-image"
+                    src="src/images/95435e4f5b210b19b933f95c6311a767b4618423.jpg"
+                    alt="house"
+                  />
+                  <div
+                    class="d-flex bg-white rounded-circle p-2 position-absolute bottom-0 end-0 me-2 shadow"
+                  >
+                    <img
+                      class="w-100 h-100"
+                      src="src/images/Frame.png"
+                      alt="bookmark"
+                    />
+                  </div>
+                  <span
+                    class="position-absolute top-0 start-0 mt-3 ms-3 badge rounded-pill text-bg-success fw-normal p-2"
+                    >VIP TOP+</span
+                  >
+                </div>
+                <h3 class="fs-5 pt-3 fw-medium">
+                  200 Acres Parcel for Sale in Namanga
+                </h3>
+                <h4 class="fs-6 opacity-50 fw-normal">Kajiado, Namanga</h4>
+                <div
+                  class="d-flex justify-content-end align-items-baseline pt-1 gap-1"
+                >
+                  <span class="text-success fs-3 fw-semibold">1450$</span>
+                  <span>/</span>
+                  <span>Month</span>
+                </div>
               </div>
-              <span
-                class="position-absolute top-0 start-0 mt-3 ms-3 badge rounded-pill text-bg-success fw-normal p-2"
-                >VIP TOP+</span
-              >
-            </div>
-            <h3 class="fs-5 pt-3 fw-medium">
-              200 Acres Parcel for Sale in Namanga
-            </h3>
-            <h4 class="fs-6 opacity-50 fw-normal">Kajiado, Namanga</h4>
-            <div
-              class="d-flex justify-content-end align-items-baseline pt-1 gap-1"
-            >
-              <span class="text-success fs-3 fw-semibold">1450$</span>
-              <span>/</span>
-              <span>Month</span>
-            </div>
-          </div>
-          <hr class="my-1" />
-          <div class="p-4">
-            <div class="d-flex justify-content-between fs-6">
-              <span> 5 Bedroom </span>
-              <span> 5 Bedroom </span>
-              <span> 450 Sq.m. </span>
-            </div>
-          </div>
-        </div>
-      </a>
-
-      <a class="text-decoration-none text-reset" href="products.html">
-        <div class="d-flex flex-column shadow mb-4 mt-3 bg-white rounded-5">
-          <div class="p-3">
-            <div class="position-relative">
-              <img
-                class="w-100 rounded-4 mb-3"
-                src="src/images/9aba2f81804b0557885021d144d5021c4f5ef0fc.jpg"
-                alt="house"
-              />
-              <div
-                class="d-flex bg-white rounded-circle p-2 position-absolute bottom-0 end-0 me-2 shadow"
-              >
-                <img
-                  class="w-100 h-100"
-                  src="src/images/Frame.png"
-                  alt="bookmark"
-                />
+              <hr class="my-1" />
+              <div class="p-4">
+                <div class="d-flex justify-content-between fs-6">
+                  <span> 5 Bedroom </span>
+                  <span> 5 Bedroom </span>
+                  <span> 450 Sq.m. </span>
+                </div>
               </div>
-              <span
-                class="position-absolute top-0 start-0 mt-3 ms-3 badge rounded-pill text-bg-success fw-normal p-2"
-                >VIP TOP+</span
-              >
             </div>
-            <h3 class="fs-5 pt-3 fw-medium">
-              200 Acres Parcel for Sale in Namanga
-            </h3>
-            <h4 class="fs-6 opacity-50 fw-normal">Kajiado, Namanga</h4>
-            <div
-              class="d-flex justify-content-end align-items-baseline pt-1 gap-1"
-            >
-              <span class="text-success fs-3 fw-semibold">1450$</span>
-              <span>/</span>
-              <span>Month</span>
-            </div>
-          </div>
-          <hr class="my-1" />
-          <div class="p-4">
-            <div class="d-flex justify-content-between fs-6">
-              <span> 5 Bedroom </span>
-              <span> 5 Bedroom </span>
-              <span> 450 Sq.m. </span>
-            </div>
-          </div>
+          </a>
         </div>
-      </a>
-
-      <a class="text-decoration-none text-reset" href="products.html">
-        <div class="d-flex flex-column shadow mb-4 mt-3 bg-white rounded-5">
-          <div class="p-3">
-            <div class="position-relative">
-              <img
-                class="w-100 rounded-4 mb-3"
-                src="src/images/95435e4f5b210b19b933f95c6311a767b4618423.jpg"
-                alt="house"
-              />
-              <div
-                class="d-flex bg-white rounded-circle p-2 position-absolute bottom-0 end-0 me-2 shadow"
-              >
-                <img
-                  class="w-100 h-100"
-                  src="src/images/Frame.png"
-                  alt="bookmark"
-                />
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <a class="text-decoration-none text-reset" href="products.html">
+            <div class="d-flex flex-column shadow mb-4 mt-3 bg-white rounded-5">
+              <div class="p-3">
+                <div class="position-relative">
+                  <img
+                    class="w-100 rounded-4 mb-3 ad-card-image"
+                    src="src/images/48293d6f8dcc0a7dc83db8f26323c818c821d4ce.jpg"
+                    alt="house"
+                  />
+                  <div
+                    class="d-flex bg-white rounded-circle p-2 position-absolute bottom-0 end-0 me-2 shadow"
+                  >
+                    <img
+                      class="w-100 h-100"
+                      src="src/images/Frame.png"
+                      alt="bookmark"
+                    />
+                  </div>
+                  <span
+                    class="position-absolute top-0 start-0 mt-3 ms-3 badge rounded-pill text-bg-success fw-normal p-2"
+                    >VIP TOP+</span
+                  >
+                </div>
+                <h3 class="fs-5 pt-3 fw-medium">
+                  200 Acres Parcel for Sale in Namanga
+                </h3>
+                <h4 class="fs-6 opacity-50 fw-normal">Kajiado, Namanga</h4>
+                <div
+                  class="d-flex justify-content-end align-items-baseline pt-1 gap-1"
+                >
+                  <span class="text-success fs-3 fw-semibold">1450$</span>
+                  <span>/</span>
+                  <span>Month</span>
+                </div>
               </div>
-              <span
-                class="position-absolute top-0 start-0 mt-3 ms-3 badge rounded-pill text-bg-success fw-normal p-2"
-                >VIP TOP+</span
-              >
-            </div>
-            <h3 class="fs-5 pt-3 fw-medium">
-              200 Acres Parcel for Sale in Namanga
-            </h3>
-            <h4 class="fs-6 opacity-50 fw-normal">Kajiado, Namanga</h4>
-            <div
-              class="d-flex justify-content-end align-items-baseline pt-1 gap-1"
-            >
-              <span class="text-success fs-3 fw-semibold">1450$</span>
-              <span>/</span>
-              <span>Month</span>
-            </div>
-          </div>
-          <hr class="my-1" />
-          <div class="p-4">
-            <div class="d-flex justify-content-between fs-6">
-              <span> 5 Bedroom </span>
-              <span> 5 Bedroom </span>
-              <span> 450 Sq.m. </span>
-            </div>
-          </div>
-        </div>
-      </a>
-
-      <a class="text-decoration-none text-reset" href="products.html">
-        <div class="d-flex flex-column shadow mb-4 mt-3 bg-white rounded-5">
-          <div class="p-3">
-            <div class="position-relative">
-              <img
-                class="w-100 rounded-4 mb-3"
-                src="src/images/48293d6f8dcc0a7dc83db8f26323c818c821d4ce.jpg"
-                alt="house"
-              />
-              <div
-                class="d-flex bg-white rounded-circle p-2 position-absolute bottom-0 end-0 me-2 shadow"
-              >
-                <img
-                  class="w-100 h-100"
-                  src="src/images/Frame.png"
-                  alt="bookmark"
-                />
+              <hr class="my-1" />
+              <div class="p-4">
+                <div class="d-flex justify-content-between fs-6">
+                  <span> 5 Bedroom </span>
+                  <span> 5 Bedroom </span>
+                  <span> 450 Sq.m. </span>
+                </div>
               </div>
-              <span
-                class="position-absolute top-0 start-0 mt-3 ms-3 badge rounded-pill text-bg-success fw-normal p-2"
-                >VIP TOP+</span
-              >
             </div>
-            <h3 class="fs-5 pt-3 fw-medium">
-              200 Acres Parcel for Sale in Namanga
-            </h3>
-            <h4 class="fs-6 opacity-50 fw-normal">Kajiado, Namanga</h4>
-            <div
-              class="d-flex justify-content-end align-items-baseline pt-1 gap-1"
-            >
-              <span class="text-success fs-3 fw-semibold">1450$</span>
-              <span>/</span>
-              <span>Month</span>
-            </div>
-          </div>
-          <hr class="my-1" />
-          <div class="p-4">
-            <div class="d-flex justify-content-between fs-6">
-              <span> 5 Bedroom </span>
-              <span> 5 Bedroom </span>
-              <span> 450 Sq.m. </span>
-            </div>
-          </div>
+          </a>
         </div>
-      </a>
-
-      <a class="text-decoration-none text-reset" href="products.html">
-        <div class="d-flex flex-column shadow mb-4 mt-3 bg-white rounded-5">
-          <div class="p-3">
-            <div class="position-relative">
-              <img
-                class="w-100 rounded-4 mb-3"
-                src="src/images/95435e4f5b210b19b933f95c6311a767b4618423.jpg"
-                alt="house"
-              />
-              <div
-                class="d-flex bg-white rounded-circle p-2 position-absolute bottom-0 end-0 me-2 shadow"
-              >
-                <img
-                  class="w-100 h-100"
-                  src="src/images/Frame.png"
-                  alt="bookmark"
-                />
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <a class="text-decoration-none text-reset" href="products.html">
+            <div class="d-flex flex-column shadow mb-4 mt-3 bg-white rounded-5">
+              <div class="p-3">
+                <div class="position-relative">
+                  <img
+                    class="w-100 rounded-4 mb-3 ad-card-image"
+                    src="src/images/9aba2f81804b0557885021d144d5021c4f5ef0fc.jpg"
+                    alt="house"
+                  />
+                  <div
+                    class="d-flex bg-white rounded-circle p-2 position-absolute bottom-0 end-0 me-2 shadow"
+                  >
+                    <img
+                      class="w-100 h-100"
+                      src="src/images/Frame.png"
+                      alt="bookmark"
+                    />
+                  </div>
+                  <span
+                    class="position-absolute top-0 start-0 mt-3 ms-3 badge rounded-pill text-bg-success fw-normal p-2"
+                    >VIP TOP+</span
+                  >
+                </div>
+                <h3 class="fs-5 pt-3 fw-medium">
+                  200 Acres Parcel for Sale in Namanga
+                </h3>
+                <h4 class="fs-6 opacity-50 fw-normal">Kajiado, Namanga</h4>
+                <div
+                  class="d-flex justify-content-end align-items-baseline pt-1 gap-1"
+                >
+                  <span class="text-success fs-3 fw-semibold">1450$</span>
+                  <span>/</span>
+                  <span>Month</span>
+                </div>
               </div>
-              <span
-                class="position-absolute top-0 start-0 mt-3 ms-3 badge rounded-pill text-bg-success fw-normal p-2"
-                >VIP TOP+</span
-              >
-            </div>
-            <h3 class="fs-5 pt-3 fw-medium">
-              200 Acres Parcel for Sale in Namanga
-            </h3>
-            <h4 class="fs-6 opacity-50 fw-normal">Kajiado, Namanga</h4>
-            <div
-              class="d-flex justify-content-end align-items-baseline pt-1 gap-1"
-            >
-              <span class="text-success fs-3 fw-semibold">1450$</span>
-              <span>/</span>
-              <span>Month</span>
-            </div>
-          </div>
-          <hr class="my-1" />
-          <div class="p-4">
-            <div class="d-flex justify-content-between fs-6">
-              <span> 5 Bedroom </span>
-              <span> 5 Bedroom </span>
-              <span> 450 Sq.m. </span>
-            </div>
-          </div>
-        </div>
-      </a>
-
-      <a class="text-decoration-none text-reset" href="products.html">
-        <div class="d-flex flex-column shadow mb-4 mt-3 bg-white rounded-5">
-          <div class="p-3">
-            <div class="position-relative">
-              <img
-                class="w-100 rounded-4 mb-3"
-                src="src/images/9aba2f81804b0557885021d144d5021c4f5ef0fc.jpg"
-                alt="house"
-              />
-              <div
-                class="d-flex bg-white rounded-circle p-2 position-absolute bottom-0 end-0 me-2 shadow"
-              >
-                <img
-                  class="w-100 h-100"
-                  src="src/images/Frame.png"
-                  alt="bookmark"
-                />
+              <hr class="my-1" />
+              <div class="p-4">
+                <div class="d-flex justify-content-between fs-6">
+                  <span> 5 Bedroom </span>
+                  <span> 5 Bedroom </span>
+                  <span> 450 Sq.m. </span>
+                </div>
               </div>
-              <span
-                class="position-absolute top-0 start-0 mt-3 ms-3 badge rounded-pill text-bg-success fw-normal p-2"
-                >VIP TOP+</span
-              >
             </div>
-            <h3 class="fs-5 pt-3 fw-medium">
-              200 Acres Parcel for Sale in Namanga
-            </h3>
-            <h4 class="fs-6 opacity-50 fw-normal">Kajiado, Namanga</h4>
-            <div
-              class="d-flex justify-content-end align-items-baseline pt-1 gap-1"
-            >
-              <span class="text-success fs-3 fw-semibold">1450$</span>
-              <span>/</span>
-              <span>Month</span>
-            </div>
-          </div>
-          <hr class="my-1" />
-          <div class="p-4">
-            <div class="d-flex justify-content-between fs-6">
-              <span> 5 Bedroom </span>
-              <span> 5 Bedroom </span>
-              <span> 450 Sq.m. </span>
-            </div>
-          </div>
+          </a>
         </div>
-      </a>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <a class="text-decoration-none text-reset" href="products.html">
+            <div class="d-flex flex-column shadow mb-4 mt-3 bg-white rounded-5">
+              <div class="p-3">
+                <div class="position-relative">
+                  <img
+                    class="w-100 rounded-4 mb-3 ad-card-image"
+                    src="src/images/95435e4f5b210b19b933f95c6311a767b4618423.jpg"
+                    alt="house"
+                  />
+                  <div
+                    class="d-flex bg-white rounded-circle p-2 position-absolute bottom-0 end-0 me-2 shadow"
+                  >
+                    <img
+                      class="w-100 h-100"
+                      src="src/images/Frame.png"
+                      alt="bookmark"
+                    />
+                  </div>
+                  <span
+                    class="position-absolute top-0 start-0 mt-3 ms-3 badge rounded-pill text-bg-success fw-normal p-2"
+                    >VIP TOP+</span
+                  >
+                </div>
+                <h3 class="fs-5 pt-3 fw-medium">
+                  200 Acres Parcel for Sale in Namanga
+                </h3>
+                <h4 class="fs-6 opacity-50 fw-normal">Kajiado, Namanga</h4>
+                <div
+                  class="d-flex justify-content-end align-items-baseline pt-1 gap-1"
+                >
+                  <span class="text-success fs-3 fw-semibold">1450$</span>
+                  <span>/</span>
+                  <span>Month</span>
+                </div>
+              </div>
+              <hr class="my-1" />
+              <div class="p-4">
+                <div class="d-flex justify-content-between fs-6">
+                  <span> 5 Bedroom </span>
+                  <span> 5 Bedroom </span>
+                  <span> 450 Sq.m. </span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <a class="text-decoration-none text-reset" href="products.html">
+            <div class="d-flex flex-column shadow mb-4 mt-3 bg-white rounded-5">
+              <div class="p-3">
+                <div class="position-relative">
+                  <img
+                    class="w-100 rounded-4 mb-3 ad-card-image"
+                    src="src/images/48293d6f8dcc0a7dc83db8f26323c818c821d4ce.jpg"
+                    alt="house"
+                  />
+                  <div
+                    class="d-flex bg-white rounded-circle p-2 position-absolute bottom-0 end-0 me-2 shadow"
+                  >
+                    <img
+                      class="w-100 h-100"
+                      src="src/images/Frame.png"
+                      alt="bookmark"
+                    />
+                  </div>
+                  <span
+                    class="position-absolute top-0 start-0 mt-3 ms-3 badge rounded-pill text-bg-success fw-normal p-2"
+                    >VIP TOP+</span
+                  >
+                </div>
+                <h3 class="fs-5 pt-3 fw-medium">
+                  200 Acres Parcel for Sale in Namanga
+                </h3>
+                <h4 class="fs-6 opacity-50 fw-normal">Kajiado, Namanga</h4>
+                <div
+                  class="d-flex justify-content-end align-items-baseline pt-1 gap-1"
+                >
+                  <span class="text-success fs-3 fw-semibold">1450$</span>
+                  <span>/</span>
+                  <span>Month</span>
+                </div>
+              </div>
+              <hr class="my-1" />
+              <div class="p-4">
+                <div class="d-flex justify-content-between fs-6">
+                  <span> 5 Bedroom </span>
+                  <span> 5 Bedroom </span>
+                  <span> 450 Sq.m. </span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <a class="text-decoration-none text-reset" href="products.html">
+            <div class="d-flex flex-column shadow mb-4 mt-3 bg-white rounded-5">
+              <div class="p-3">
+                <div class="position-relative">
+                  <img
+                    class="w-100 rounded-4 mb-3 ad-card-image"
+                    src="src/images/95435e4f5b210b19b933f95c6311a767b4618423.jpg"
+                    alt="house"
+                  />
+                  <div
+                    class="d-flex bg-white rounded-circle p-2 position-absolute bottom-0 end-0 me-2 shadow"
+                  >
+                    <img
+                      class="w-100 h-100"
+                      src="src/images/Frame.png"
+                      alt="bookmark"
+                    />
+                  </div>
+                  <span
+                    class="position-absolute top-0 start-0 mt-3 ms-3 badge rounded-pill text-bg-success fw-normal p-2"
+                    >VIP TOP+</span
+                  >
+                </div>
+                <h3 class="fs-5 pt-3 fw-medium">
+                  200 Acres Parcel for Sale in Namanga
+                </h3>
+                <h4 class="fs-6 opacity-50 fw-normal">Kajiado, Namanga</h4>
+                <div
+                  class="d-flex justify-content-end align-items-baseline pt-1 gap-1"
+                >
+                  <span class="text-success fs-3 fw-semibold">1450$</span>
+                  <span>/</span>
+                  <span>Month</span>
+                </div>
+              </div>
+              <hr class="my-1" />
+              <div class="p-4">
+                <div class="d-flex justify-content-between fs-6">
+                  <span> 5 Bedroom </span>
+                  <span> 5 Bedroom </span>
+                  <span> 450 Sq.m. </span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <a class="text-decoration-none text-reset" href="products.html">
+            <div class="d-flex flex-column shadow mb-4 mt-3 bg-white rounded-5">
+              <div class="p-3">
+                <div class="position-relative">
+                  <img
+                    class="w-100 rounded-4 mb-3 ad-card-image"
+                    src="src/images/9aba2f81804b0557885021d144d5021c4f5ef0fc.jpg"
+                    alt="house"
+                  />
+                  <div
+                    class="d-flex bg-white rounded-circle p-2 position-absolute bottom-0 end-0 me-2 shadow"
+                  >
+                    <img
+                      class="w-100 h-100"
+                      src="src/images/Frame.png"
+                      alt="bookmark"
+                    />
+                  </div>
+                  <span
+                    class="position-absolute top-0 start-0 mt-3 ms-3 badge rounded-pill text-bg-success fw-normal p-2"
+                    >VIP TOP+</span
+                  >
+                </div>
+                <h3 class="fs-5 pt-3 fw-medium">
+                  200 Acres Parcel for Sale in Namanga
+                </h3>
+                <h4 class="fs-6 opacity-50 fw-normal">Kajiado, Namanga</h4>
+                <div
+                  class="d-flex justify-content-end align-items-baseline pt-1 gap-1"
+                >
+                  <span class="text-success fs-3 fw-semibold">1450$</span>
+                  <span>/</span>
+                  <span>Month</span>
+                </div>
+              </div>
+              <hr class="my-1" />
+              <div class="p-4">
+                <div class="d-flex justify-content-between fs-6">
+                  <span> 5 Bedroom </span>
+                  <span> 5 Bedroom </span>
+                  <span> 450 Sq.m. </span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
     </section>
 
-    <footer class="container bg-success p-5 mb-5 mt-5 rounded-5">
+    <footer class="bg-success p-5 mt-5 rounded-5">
       <div class="row justify-content-between">
         <div class="col-auto text-white">
-          <ul class="list-unstyled mb-0">
-            <li class="pb-3">
+          <ul class="list-unstyled mb-0 d-md-flex gap-md-3">
+            <li class="pb-3 pb-md-0">
               <a
                 href="index.html"
                 class="text-white text-decoration-none text-reset fw-medium"
                 >Home</a
               >
             </li>
-            <li class="pb-3">
+            <li class="pb-3 pb-md-0">
               <a
                 href="#"
                 class="text-white text-decoration-none text-reset fw-medium"
                 >Discover</a
               >
             </li>
-            <li class="pb-3">
+            <li class="pb-3 pb-md-0">
               <a
                 href="#"
                 class="text-white text-decoration-none text-reset fw-medium"
                 >Contact us</a
               >
             </li>
-            <li class="pb-3">
+            <li class="pb-3 pb-md-0">
               <a
                 href="#"
                 class="text-white text-decoration-none text-reset fw-medium"
@@ -674,30 +693,34 @@
             </li>
           </ul>
         </div>
+        <div class="col-auto text-center d-lg-block d-none text-white">
+          Support@Roberts.com
+        </div>
+
         <div class="col-auto text-end text-white">
-          <ul class="list-unstyled mb-0">
-            <li class="pb-3">
+          <ul class="list-unstyled mb-0 d-md-flex gap-md-3">
+            <li class="pb-3 pb-md-0">
               <a
                 href="#"
                 class="text-white text-decoration-none text-reset fw-medium"
                 >Facebook</a
               >
             </li>
-            <li class="pb-3">
+            <li class="pb-3 pb-md-0">
               <a
                 href="#"
                 class="text-white text-decoration-none text-reset fw-medium"
                 >Instagram</a
               >
             </li>
-            <li class="pb-3">
+            <li class="pb-3 pb-md-0">
               <a
                 href="#"
                 class="text-white text-decoration-none text-reset fw-medium"
                 >Youtube</a
               >
             </li>
-            <li class="pb-3">
+            <li class="pb-3 pb-md-0">
               <a
                 href="#"
                 class="text-white text-decoration-none text-reset fw-medium"
@@ -713,7 +736,7 @@
       </div>
 
       <nav
-        class="fixed-bottom bg-white p-1 d-flex justify-content-around align-items-center"
+        class="bg-white p-1 d-flex justify-content-around align-items-center rounded-top fixed-bottom d-md-none"
       >
         <a
           href="index.html"
@@ -731,7 +754,7 @@
         </a>
         <a
           href="#"
-          class="d-flex flex-column align-items-center text-decoration-none text-reset"
+          class="d-flex flex-column align-items-center text-decoration-none text-reset mt-n3"
         >
           <img
             class="btn btn-success p-2 border-circle"
@@ -756,7 +779,6 @@
         </a>
       </nav>
     </footer>
-
     <script src="src/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
