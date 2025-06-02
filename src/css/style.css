@@ -22,7 +22,10 @@ body {
 .card-hover {
   transition: all 0.5s ease-in-out;
 }
-
+.house-image{
+  height: 316px;
+  object-fit: cover;
+}
 @media (max-width: 768px) {
   body {
     padding-bottom: 150px;
