@@ -1,11 +1,6 @@
 body {
   background-color: #f2f2f2;
-}
-
-@media (max-width: 768px) {
-  body {
-    padding-bottom: 150px;
-  }
+  font-family: "Poppins";
 }
 .header-icon {
   width: 48px;
@@ -19,5 +14,17 @@ body {
 .ad-card-image {
   height: 200px;
   object-fit: cover;
-  object-position: center;
+}
+.card-hover:hover {
+  transform: scale(1.05);
+  color: green;
+}
+.card-hover {
+  transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 150px;
+  }
 }
