@@ -90,7 +90,7 @@
               </li>
             </ul>
           </div>
-          <button type="button" class="btn btn-success d-none d-md-block p-2">
+          <button type="button" class="btn custom-button d-none d-md-block p-2">
             Sell Something
           </button>
           <div class="rounded-circle bg-white shadow-sm d-md-none">
@@ -104,7 +104,7 @@
       <div class="row">
         <div class="position-relative col-12 col-lg-8 order-lg-2 pb-3 pb-lg-0">
           <img
-            class="main-image rounded-5 w-100 h-100"
+            class="rounded-5 w-100 h-100 object-fit-cover"
             src="src/images/531b58312d00d82a61321f4b4a29438517abbb42.jpg"
             alt="city"
           />
@@ -141,19 +141,26 @@
             </div>
           </div>
         </div>
-        <div class="shadow p-3 bg-white rounded-4 col-12 col-lg-4 order-lg-1">
-          <h2 class="fs-5 fw-semibold lh-1 pb-2">Location</h2>
-          <select class="form-select mb-4" aria-label="Default select example">
+        <div class="shadow p-4 bg-white rounded-4 col-12 col-lg-4 order-lg-1">
+          <h2 class="fs-5 fw-semibold lh-1 py-2">Location</h2>
+          <select
+            class="form-select mb-4 specific-green-border"
+            aria-label="Default select example"
+          >
             <option selected>All Kenya</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option value="place1">Place 1</option>
+            <option value="place2">Place 2</option>
+            <option value="place3">Place 3</option>
           </select>
 
           <h2 class="fs-5 fw-semibold lh-1 pb-1 pt-2 pb-2">Property</h2>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="checkDefault" />
-            <label class="form-check-label pb-1" for="checkDefault">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="propertyRentHouses"
+            />
+            <label class="form-check-label pb-1" for="propertyRentHouses">
               Houses & Apartments for Rent
               <span class="opacity-75">| 9548</span>
             </label>
@@ -162,10 +169,10 @@
             <input
               class="form-check-input"
               type="checkbox"
-              id="checkDefault"
+              id="propertySaleHouses"
               checked
             />
-            <label class="form-check-label pb-1" for="checkDefault">
+            <label class="form-check-label pb-1" for="propertySaleHouses">
               Houses & Apartments for Sale
               <span class="opacity-75">| 9548</span>
             </label>
@@ -174,29 +181,41 @@
             <input
               class="form-check-input"
               type="checkbox"
-              id="checkDefault"
+              id="propertyRentLand"
               checked
             />
-            <label class="form-check-label pb-1" for="checkDefault">
+            <label class="form-check-label pb-1" for="propertyRentLand">
               Land & Plots for Rent <span class="opacity-75">| 9548</span>
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="checkDefault" />
-            <label class="form-check-label pb-1" for="checkDefault">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="propertySaleLand"
+            />
+            <label class="form-check-label pb-1" for="propertySaleLand">
               Land & Plots for Sale <span class="opacity-75">| 9548</span>
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="checkDefault" />
-            <label class="form-check-label pb-1" for="checkDefault">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="propertyRentCommercial"
+            />
+            <label class="form-check-label pb-1" for="propertyRentCommercial">
               Commercial Property for Rent
               <span class="opacity-75">| 9548</span>
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="checkDefault" />
-            <label class="form-check-label pb-1" for="checkDefault">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="propertySaleCommercial"
+            />
+            <label class="form-check-label pb-1" for="propertySaleCommercial">
               Commercial Property for Sale
               <span class="opacity-75">| 9548</span>
             </label>
@@ -205,29 +224,41 @@
             <input
               class="form-check-input"
               type="checkbox"
-              id="checkDefault"
+              id="propertyEventCentres"
               checked
             />
-            <label class="form-check-label pb-1" for="checkDefault">
+            <label class="form-check-label pb-1" for="propertyEventCentres">
               Event Centres, Venues & Worksta
               <span class="opacity-75">| 9548</span>
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="checkDefault" />
-            <label class="form-check-label pb-1" for="checkDefault">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="propertyShortLet"
+            />
+            <label class="form-check-label pb-1" for="propertyShortLet">
               Short Let Property <span class="opacity-75">| 9548</span>
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="checkDefault" />
-            <label class="form-check-label pb-1" for="checkDefault">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="propertySaleLand2"
+            />
+            <label class="form-check-label pb-1" for="propertySaleLand2">
               Land & Plots for Sale <span class="opacity-75">| 9548</span>
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="checkDefault" />
-            <label class="form-check-label pb-1" for="checkDefault">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="propertyRentCommercial2"
+            />
+            <label class="form-check-label pb-1" for="propertyRentCommercial2">
               Commercial Property for Rent
               <span class="opacity-75">| 9548</span>
             </label>
@@ -235,14 +266,12 @@
 
           <h2 class="fs-5 fw-semibold lh-1 pt-4 pb-2">Price range</h2>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="checkDefault" />
-            <label class="form-check-label pb-1" for="checkDefault">
-              Under 13 K <span class="opacity-75">• 2183 ads</span>
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="checkDefault" />
-            <label class="form-check-label pb-1" for="checkDefault">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="priceUnder13K"
+            />
+            <label class="form-check-label pb-1" for="priceUnder13K">
               Under 13 K <span class="opacity-75">• 2183 ads</span>
             </label>
           </div>
@@ -250,10 +279,20 @@
             <input
               class="form-check-input"
               type="checkbox"
-              id="checkDefault"
+              id="priceUnder13K2"
+            />
+            <label class="form-check-label pb-1" for="priceUnder13K2">
+              Under 13 K <span class="opacity-75">• 2183 ads</span>
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="price160Kto6M"
               checked
             />
-            <label class="form-check-label pb-1" for="checkDefault">
+            <label class="form-check-label pb-1" for="price160Kto6M">
               160 K - 6 M <span class="opacity-75">• 2183 ads</span>
             </label>
           </div>
@@ -261,16 +300,20 @@
             <input
               class="form-check-input"
               type="checkbox"
-              id="checkDefault"
+              id="price6Mto55M"
               checked
             />
-            <label class="form-check-label pb-1" for="checkDefault">
+            <label class="form-check-label pb-1" for="price6Mto55M">
               6 - 55 M <span class="opacity-75">• 2183 ads</span>
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="checkDefault" />
-            <label class="form-check-label pb-1" for="checkDefault">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="price6Mto55M2"
+            />
+            <label class="form-check-label pb-1" for="price6Mto55M2">
               6 - 55 M <span class="opacity-75">• 2183 ads</span>
             </label>
           </div>
@@ -303,7 +346,7 @@
                     />
                   </div>
                   <span
-                    class="position-absolute top-0 start-0 mt-3 ms-3 badge rounded-pill text-bg-success fw-normal p-2"
+                    class="position-absolute top-0 start-0 mt-3 ms-3 badge rounded-pill bg-green fw-normal p-2"
                     >VIP TOP+</span
                   >
                 </div>
@@ -314,12 +357,12 @@
                 <div
                   class="d-flex justify-content-end align-items-baseline pt-1 gap-1"
                 >
-                  <span class="text-success fs-4 fw-semibold">1450$</span>
-                  <span>/</span>
-                  <span>Month</span>
+                  <span class="text-green fs-4 fw-medium">1450$</span>
+                  <span class="small">/</span>
+                  <span class="small">Month</span>
                 </div>
               </div>
-              <hr class="my-1" />
+              <hr class="my-1 color-line" />
               <div class="p-4">
                 <div class="d-flex justify-content-between small">
                   <span> 5 Bedroom </span>
@@ -352,7 +395,7 @@
                     />
                   </div>
                   <span
-                    class="position-absolute top-0 start-0 mt-3 ms-3 badge rounded-pill text-bg-success fw-normal p-2"
+                    class="position-absolute top-0 start-0 mt-3 ms-3 badge rounded-pill bg-green fw-normal p-2"
                     >VIP TOP+</span
                   >
                 </div>
@@ -363,12 +406,12 @@
                 <div
                   class="d-flex justify-content-end align-items-baseline pt-1 gap-1"
                 >
-                  <span class="text-success fs-4 fw-semibold">1450$</span>
-                  <span>/</span>
-                  <span>Month</span>
+                  <span class="text-green fs-4 fw-medium">1450$</span>
+                  <span class="small">/</span>
+                  <span class="small">Month</span>
                 </div>
               </div>
-              <hr class="my-1" />
+              <hr class="my-1 color-line" />
               <div class="p-4">
                 <div class="d-flex justify-content-between small">
                   <span> 5 Bedroom </span>
@@ -401,7 +444,7 @@
                     />
                   </div>
                   <span
-                    class="position-absolute top-0 start-0 mt-3 ms-3 badge rounded-pill text-bg-success fw-normal p-2"
+                    class="position-absolute top-0 start-0 mt-3 ms-3 badge rounded-pill bg-green fw-normal p-2"
                     >VIP TOP+</span
                   >
                 </div>
@@ -412,12 +455,12 @@
                 <div
                   class="d-flex justify-content-end align-items-baseline pt-1 gap-1"
                 >
-                  <span class="text-success fs-4 fw-semibold">1450$</span>
-                  <span>/</span>
-                  <span>Month</span>
+                  <span class="text-green fs-4 fw-medium">1450$</span>
+                  <span class="small">/</span>
+                  <span class="small">Month</span>
                 </div>
               </div>
-              <hr class="my-1" />
+              <hr class="my-1 color-line" />
               <div class="p-4">
                 <div class="d-flex justify-content-between small">
                   <span> 5 Bedroom </span>
@@ -450,7 +493,7 @@
                     />
                   </div>
                   <span
-                    class="position-absolute top-0 start-0 mt-3 ms-3 badge rounded-pill text-bg-success fw-normal p-2"
+                    class="position-absolute top-0 start-0 mt-3 ms-3 badge rounded-pill bg-green fw-normal p-2"
                     >VIP TOP+</span
                   >
                 </div>
@@ -461,12 +504,12 @@
                 <div
                   class="d-flex justify-content-end align-items-baseline pt-1 gap-1"
                 >
-                  <span class="text-success fs-4 fw-semibold">1450$</span>
-                  <span>/</span>
-                  <span>Month</span>
+                  <span class="text-green fs-4 fw-medium">1450$</span>
+                  <span class="small">/</span>
+                  <span class="small">Month</span>
                 </div>
               </div>
-              <hr class="my-1" />
+              <hr class="my-1 color-line" />
               <div class="p-4">
                 <div class="d-flex justify-content-between small">
                   <span> 5 Bedroom </span>
@@ -499,7 +542,7 @@
                     />
                   </div>
                   <span
-                    class="position-absolute top-0 start-0 mt-3 ms-3 badge rounded-pill text-bg-success fw-normal p-2"
+                    class="position-absolute top-0 start-0 mt-3 ms-3 badge rounded-pill bg-green fw-normal p-2"
                     >VIP TOP+</span
                   >
                 </div>
@@ -510,12 +553,12 @@
                 <div
                   class="d-flex justify-content-end align-items-baseline pt-1 gap-1"
                 >
-                  <span class="text-success fs-4 fw-semibold">1450$</span>
-                  <span>/</span>
-                  <span>Month</span>
+                  <span class="text-green fs-4 fw-medium">1450$</span>
+                  <span class="small">/</span>
+                  <span class="small">Month</span>
                 </div>
               </div>
-              <hr class="my-1" />
+              <hr class="my-1 color-line" />
               <div class="p-4">
                 <div class="d-flex justify-content-between small">
                   <span> 5 Bedroom </span>
@@ -548,7 +591,7 @@
                     />
                   </div>
                   <span
-                    class="position-absolute top-0 start-0 mt-3 ms-3 badge rounded-pill text-bg-success fw-normal p-2"
+                    class="position-absolute top-0 start-0 mt-3 ms-3 badge rounded-pill bg-green fw-normal p-2"
                     >VIP TOP+</span
                   >
                 </div>
@@ -559,12 +602,12 @@
                 <div
                   class="d-flex justify-content-end align-items-baseline pt-1 gap-1"
                 >
-                  <span class="text-success fs-4 fw-semibold">1450$</span>
-                  <span>/</span>
-                  <span>Month</span>
+                  <span class="text-green fs-4 fw-medium">1450$</span>
+                  <span class="small">/</span>
+                  <span class="small">Month</span>
                 </div>
               </div>
-              <hr class="my-1" />
+              <hr class="my-1 color-line" />
               <div class="p-4">
                 <div class="d-flex justify-content-between small">
                   <span> 5 Bedroom </span>
@@ -597,7 +640,7 @@
                     />
                   </div>
                   <span
-                    class="position-absolute top-0 start-0 mt-3 ms-3 badge rounded-pill text-bg-success fw-normal p-2"
+                    class="position-absolute top-0 start-0 mt-3 ms-3 badge rounded-pill bg-green fw-normal p-2"
                     >VIP TOP+</span
                   >
                 </div>
@@ -608,12 +651,12 @@
                 <div
                   class="d-flex justify-content-end align-items-baseline pt-1 gap-1"
                 >
-                  <span class="text-success fs-4 fw-semibold">1450$</span>
-                  <span>/</span>
-                  <span>Month</span>
+                  <span class="text-green fs-4 fw-medium">1450$</span>
+                  <span class="small">/</span>
+                  <span class="small">Month</span>
                 </div>
               </div>
-              <hr class="my-1" />
+              <hr class="my-1 color-line" />
               <div class="p-4">
                 <div class="d-flex justify-content-between small">
                   <span> 5 Bedroom </span>
@@ -646,7 +689,7 @@
                     />
                   </div>
                   <span
-                    class="position-absolute top-0 start-0 mt-3 ms-3 badge rounded-pill text-bg-success fw-normal p-2"
+                    class="position-absolute top-0 start-0 mt-3 ms-3 badge rounded-pill bg-green fw-normal p-2"
                     >VIP TOP+</span
                   >
                 </div>
@@ -657,12 +700,12 @@
                 <div
                   class="d-flex justify-content-end align-items-baseline pt-1 gap-1"
                 >
-                  <span class="text-success fs-4 fw-semibold">1450$</span>
-                  <span>/</span>
-                  <span>Month</span>
+                  <span class="text-green fs-4 fw-medium">1450$</span>
+                  <span class="small">/</span>
+                  <span class="small">Month</span>
                 </div>
               </div>
-              <hr class="my-1" />
+              <hr class="my-1 color-line" />
               <div class="p-4">
                 <div class="d-flex justify-content-between small">
                   <span> 5 Bedroom </span>
@@ -676,7 +719,7 @@
       </div>
     </section>
 
-    <footer class="bg-success p-5 mt-5 rounded-5">
+    <footer class="bg-green p-5 mt-5 rounded-5">
       <div class="row justify-content-between">
         <div class="col-auto text-white">
           <ul class="list-unstyled mb-0 d-md-flex gap-md-3">
@@ -774,7 +817,7 @@
           class="d-flex flex-column align-items-center text-decoration-none text-reset mt-n3"
         >
           <img
-            class="btn btn-success p-2 border-circle"
+            class="btn custom-button p-2 border-circle"
             src="src/images/Frame (1).png"
             alt="sell"
           />
