@@ -24,7 +24,7 @@
       property="og:url"
       content="https://anakavtaradze1.github.io/front28-lesson12/"
     />
-    <meta property="og:type" content="article" />
+    <meta property="og:type" content="website" />
     <meta property="og:title" content="Houses for rent and sale" />
     <meta
       property="og:description"
@@ -50,10 +50,7 @@
     <header>
       <nav class="navbar navbar-expand-md container pt-3 pb-3">
         <div class="container-fluid">
-          <a
-            class="navbar-brand text-decoration-none text-reset"
-            href="index.html"
-          >
+          <a class="navbar-brand" href="index.html">
             <img
               class="header-icon"
               src="src/images/33408b0a8c5a10c25cd7a6d14d87414108442484.png"
@@ -90,9 +87,12 @@
               </li>
             </ul>
           </div>
-          <button type="button" class="btn custom-button d-none d-md-block p-2">
+          <a
+            href="#"
+            class="custom-button d-none d-md-block p-2 bg-green rounded-3 text-decoration-none"
+          >
             Sell Something
-          </button>
+          </a>
           <div class="rounded-circle bg-white shadow-sm d-md-none">
             <img class="p-3" src="src/images/search-normal.png" alt="search" />
           </div>
@@ -102,7 +102,9 @@
 
     <section class="my-4 container">
       <div class="row">
-        <div class="position-relative col-12 col-lg-8 order-lg-2 pb-3 pb-lg-0">
+        <div
+          class="position-relative col-12 col-lg-9 order-lg-2 pb-3 pb-lg-0 custom-image-container"
+        >
           <img
             class="rounded-5 w-100 h-100 object-fit-cover"
             src="src/images/531b58312d00d82a61321f4b4a29438517abbb42.jpg"
@@ -119,7 +121,7 @@
               <form
                 action="#"
                 method="get"
-                class="w-50 d-none d-md-block pt-5"
+                class="w-30 d-none d-md-block pt-5"
                 role="search"
               >
                 <div class="position-relative">
@@ -141,10 +143,10 @@
             </div>
           </div>
         </div>
-        <div class="shadow p-4 bg-white rounded-4 col-12 col-lg-4 order-lg-1">
-          <h2 class="fs-5 fw-semibold lh-1 py-2">Location</h2>
+        <div class="shadow p-4 bg-white rounded-4 col-12 col-lg-3 order-lg-1">
+          <h2 class="fs-6 fw-semibold lh-1 py-2">Location</h2>
           <select
-            class="form-select mb-4 specific-green-border"
+            class="form-select mb-4 specific-green-borders"
             aria-label="Default select example"
           >
             <option selected>All Kenya</option>
@@ -153,14 +155,14 @@
             <option value="place3">Place 3</option>
           </select>
 
-          <h2 class="fs-5 fw-semibold lh-1 pb-1 pt-2 pb-2">Property</h2>
+          <h2 class="fs-6 fw-semibold lh-1 pt-2 pb-2">Property</h2>
           <div class="form-check">
             <input
               class="form-check-input"
               type="checkbox"
               id="propertyRentHouses"
             />
-            <label class="form-check-label pb-1" for="propertyRentHouses">
+            <label class="form-check-label pb-1 small" for="propertyRentHouses">
               Houses & Apartments for Rent
               <span class="opacity-75">| 9548</span>
             </label>
@@ -172,7 +174,7 @@
               id="propertySaleHouses"
               checked
             />
-            <label class="form-check-label pb-1" for="propertySaleHouses">
+            <label class="form-check-label pb-1 small" for="propertySaleHouses">
               Houses & Apartments for Sale
               <span class="opacity-75">| 9548</span>
             </label>
@@ -184,7 +186,7 @@
               id="propertyRentLand"
               checked
             />
-            <label class="form-check-label pb-1" for="propertyRentLand">
+            <label class="form-check-label pb-1 small" for="propertyRentLand">
               Land & Plots for Rent <span class="opacity-75">| 9548</span>
             </label>
           </div>
@@ -194,7 +196,7 @@
               type="checkbox"
               id="propertySaleLand"
             />
-            <label class="form-check-label pb-1" for="propertySaleLand">
+            <label class="form-check-label pb-1 small" for="propertySaleLand">
               Land & Plots for Sale <span class="opacity-75">| 9548</span>
             </label>
           </div>
@@ -204,7 +206,10 @@
               type="checkbox"
               id="propertyRentCommercial"
             />
-            <label class="form-check-label pb-1" for="propertyRentCommercial">
+            <label
+              class="form-check-label pb-1 small"
+              for="propertyRentCommercial"
+            >
               Commercial Property for Rent
               <span class="opacity-75">| 9548</span>
             </label>
@@ -215,7 +220,10 @@
               type="checkbox"
               id="propertySaleCommercial"
             />
-            <label class="form-check-label pb-1" for="propertySaleCommercial">
+            <label
+              class="form-check-label pb-1 small"
+              for="propertySaleCommercial"
+            >
               Commercial Property for Sale
               <span class="opacity-75">| 9548</span>
             </label>
@@ -227,7 +235,10 @@
               id="propertyEventCentres"
               checked
             />
-            <label class="form-check-label pb-1" for="propertyEventCentres">
+            <label
+              class="form-check-label pb-1 small"
+              for="propertyEventCentres"
+            >
               Event Centres, Venues & Worksta
               <span class="opacity-75">| 9548</span>
             </label>
@@ -238,7 +249,7 @@
               type="checkbox"
               id="propertyShortLet"
             />
-            <label class="form-check-label pb-1" for="propertyShortLet">
+            <label class="form-check-label pb-1 small" for="propertyShortLet">
               Short Let Property <span class="opacity-75">| 9548</span>
             </label>
           </div>
@@ -248,7 +259,7 @@
               type="checkbox"
               id="propertySaleLand2"
             />
-            <label class="form-check-label pb-1" for="propertySaleLand2">
+            <label class="form-check-label pb-1 small" for="propertySaleLand2">
               Land & Plots for Sale <span class="opacity-75">| 9548</span>
             </label>
           </div>
@@ -258,20 +269,23 @@
               type="checkbox"
               id="propertyRentCommercial2"
             />
-            <label class="form-check-label pb-1" for="propertyRentCommercial2">
+            <label
+              class="form-check-label pb-1 small"
+              for="propertyRentCommercial2"
+            >
               Commercial Property for Rent
               <span class="opacity-75">| 9548</span>
             </label>
           </div>
 
-          <h2 class="fs-5 fw-semibold lh-1 pt-4 pb-2">Price range</h2>
+          <h2 class="fs-6 fw-semibold lh-1 pt-4 pb-2">Price range</h2>
           <div class="form-check">
             <input
               class="form-check-input"
               type="checkbox"
               id="priceUnder13K"
             />
-            <label class="form-check-label pb-1" for="priceUnder13K">
+            <label class="form-check-label pb-1 small" for="priceUnder13K">
               Under 13 K <span class="opacity-75">• 2183 ads</span>
             </label>
           </div>
@@ -281,7 +295,7 @@
               type="checkbox"
               id="priceUnder13K2"
             />
-            <label class="form-check-label pb-1" for="priceUnder13K2">
+            <label class="form-check-label pb-1 small" for="priceUnder13K2">
               Under 13 K <span class="opacity-75">• 2183 ads</span>
             </label>
           </div>
@@ -292,7 +306,7 @@
               id="price160Kto6M"
               checked
             />
-            <label class="form-check-label pb-1" for="price160Kto6M">
+            <label class="form-check-label pb-1 small" for="price160Kto6M">
               160 K - 6 M <span class="opacity-75">• 2183 ads</span>
             </label>
           </div>
@@ -303,7 +317,7 @@
               id="price6Mto55M"
               checked
             />
-            <label class="form-check-label pb-1" for="price6Mto55M">
+            <label class="form-check-label pb-1 small" for="price6Mto55M">
               6 - 55 M <span class="opacity-75">• 2183 ads</span>
             </label>
           </div>
@@ -313,7 +327,7 @@
               type="checkbox"
               id="price6Mto55M2"
             />
-            <label class="form-check-label pb-1" for="price6Mto55M2">
+            <label class="form-check-label pb-1 small" for="price6Mto55M2">
               6 - 55 M <span class="opacity-75">• 2183 ads</span>
             </label>
           </div>
@@ -721,33 +735,27 @@
 
     <footer class="bg-green p-5 mt-5 rounded-5">
       <div class="row justify-content-between">
-        <div class="col-auto text-white">
+        <div class="col-auto">
           <ul class="list-unstyled mb-0 d-md-flex gap-md-3">
             <li class="pb-3 pb-md-0">
               <a
                 href="index.html"
-                class="text-white text-decoration-none text-reset fw-medium"
+                class="text-white text-decoration-none fw-medium"
                 >Home</a
               >
             </li>
             <li class="pb-3 pb-md-0">
-              <a
-                href="#"
-                class="text-white text-decoration-none text-reset fw-medium"
+              <a href="#" class="text-white text-decoration-none fw-medium"
                 >Discover</a
               >
             </li>
             <li class="pb-3 pb-md-0">
-              <a
-                href="#"
-                class="text-white text-decoration-none text-reset fw-medium"
+              <a href="#" class="text-white text-decoration-none fw-medium"
                 >Contact us</a
               >
             </li>
             <li class="pb-3 pb-md-0">
-              <a
-                href="#"
-                class="text-white text-decoration-none text-reset fw-medium"
+              <a href="#" class="text-white text-decoration-none fw-medium"
                 >Sign in</a
               >
             </li>
@@ -757,33 +765,25 @@
           Support@Roberts.com
         </div>
 
-        <div class="col-auto text-end text-white">
+        <div class="col-auto">
           <ul class="list-unstyled mb-0 d-md-flex gap-md-3">
             <li class="pb-3 pb-md-0">
-              <a
-                href="#"
-                class="text-white text-decoration-none text-reset fw-medium"
+              <a href="#" class="text-white text-decoration-none fw-medium"
                 >Facebook</a
               >
             </li>
             <li class="pb-3 pb-md-0">
-              <a
-                href="#"
-                class="text-white text-decoration-none text-reset fw-medium"
+              <a href="#" class="text-white text-decoration-none fw-medium"
                 >Instagram</a
               >
             </li>
             <li class="pb-3 pb-md-0">
-              <a
-                href="#"
-                class="text-white text-decoration-none text-reset fw-medium"
+              <a href="#" class="text-white text-decoration-none fw-medium"
                 >Youtube</a
               >
             </li>
             <li class="pb-3 pb-md-0">
-              <a
-                href="#"
-                class="text-white text-decoration-none text-reset fw-medium"
+              <a href="#" class="text-white text-decoration-none fw-medium"
                 >Twitter</a
               >
             </li>
@@ -817,7 +817,7 @@
           class="d-flex flex-column align-items-center text-decoration-none text-reset mt-n3"
         >
           <img
-            class="btn custom-button p-2 border-circle"
+            class="custom-button p-2 border-circle bg-green rounded-3"
             src="src/images/Frame (1).png"
             alt="sell"
           />
