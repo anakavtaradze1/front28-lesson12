@@ -22,6 +22,7 @@ body {
 }
 .form-check-input:focus {
   box-shadow: 0 0 0 4px rgba(0, 128, 0, 0.25);
+  border-color: #29b24e;
 }
 .custom-button {
   color: white;
@@ -71,10 +72,19 @@ h2:hover {
   color: #229944;
   text-shadow: 0 3px 5px;
 }
+.sell-button-lift {
+  margin-top: -18px;
+}
+.nav-underline .nav-link.active {
+  border-bottom-color: #29b24e;
+}
+.nav-underline .nav-link:hover {
+  border-bottom-color: #29b24e;
+}
 
 @media (width < 768px) {
   body {
-    padding-bottom: 150px;
+    padding-bottom: 100px;
   }
   .custom-image-container {
     height: 435px;
