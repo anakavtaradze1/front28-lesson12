@@ -74,6 +74,19 @@ body {
 .nav-underline .nav-link:hover {
   border-bottom-color: #29b24e;
 }
+footer {
+  transition: background-color 0.5s ease-in-out;
+}
+footer:hover {
+  background-color: #229944;
+}
+footer a {
+  transition: all 0.5s ease-in-out;
+}
+footer a:hover {
+  color: black !important;
+  font-size: 17px;
+}
 
 @media (width < 768px) {
   body {
